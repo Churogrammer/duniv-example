@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:sqlserver://localhost:64414;databaseName=duniv;
+    #url: jdbc:log4jdbc:sqlserver://127.0.0.1:1433;databaseName=TestDB;sendStringParametersAsUnicode=false
+    username: duniv
+    password: kdsh1031
+    platform : mssql
+    initialization-mode : never
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+       # type: TRACE

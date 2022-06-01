@@ -1,0 +1,9 @@
+package com.duniv.core.boot;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.duniv.core.boot.entity.RegEntity;
+
+public interface DuvJpaRepository<Entity extends RegEntity> extends JpaRepository<Entity, String> {
+
+}

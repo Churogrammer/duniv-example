@@ -1,0 +1,17 @@
+package com.duniv.sol.service.Main;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+
+import com.duniv.core.boot.entity.RegEntity;
+
+
+@MappedSuperclass
+@Entity(name = "main")
+public class MainEntity extends RegEntity{
+
+	@Id @Column
+	String id;
+}

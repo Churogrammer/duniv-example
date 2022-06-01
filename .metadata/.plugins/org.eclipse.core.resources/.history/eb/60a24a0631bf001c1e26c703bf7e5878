@@ -1,0 +1,11 @@
+package com.duniv.sol.service.Main;
+
+import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
+
+public class DuvJpaQueryDslSupport extends QuerydslRepositorySupport{
+
+	public DuvJpaQueryDslSupport(Class<?> domainClass) {
+		super(domainClass);
+	}
+
+}

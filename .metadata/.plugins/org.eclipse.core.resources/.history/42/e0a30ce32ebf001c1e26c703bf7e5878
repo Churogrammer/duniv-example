@@ -1,0 +1,26 @@
+package com.duniv.sol.service.Main;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.MappedSuperclass;
+
+import org.springframework.data.annotation.Id;
+
+import com.duniv.core.boot.entity.RegEntity;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@Entity(name = "main")
+public class MainEntity extends RegEntity{
+
+	@Id @Column
+	String id;
+	
+	@Column
+	String name;
+}

@@ -1,0 +1,5 @@
+package com.duniv.core.boot;
+
+public class SwaggerConfig {
+
+}
